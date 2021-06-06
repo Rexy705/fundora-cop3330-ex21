@@ -11,6 +11,7 @@ public class ex21 {
     public static void main (String[] args) {
         Scanner input = new Scanner(System.in);
         Boolean correct = false;
+        String month = "none";
 
         while (correct.equals(false)) {
 
@@ -36,22 +37,22 @@ public class ex21 {
                 correct = false; continue;
             }
 
-
             switch (num_in) {
-                case "1" -> System.out.println("The name of the month is January.");
-                case "2" -> System.out.println("The name of the month is February.");
-                case "3" -> System.out.println("The name of the month is March.");
-                case "4" -> System.out.println("The name of the month is April.");
-                case "5" -> System.out.println("The name of the month is May.");
-                case "6" -> System.out.println("The name of the month is June.");
-                case "7" -> System.out.println("The name of the month is July.");
-                case "8" -> System.out.println("The name of the month is August.");
-                case "9" -> System.out.println("The name of the month is September.");
-                case "10" -> System.out.println("The name of the month is October.");
-                case "11" -> System.out.println("The name of the month is November.");
-                case "12" -> System.out.println("The name of the month is December.");
+                case "1" -> month = "January";
+                case "2" -> month = "February";
+                case "3" -> month = "March";
+                case "4" -> month = "April";
+                case "5" -> month = "May";
+                case "6" -> month = "June";
+                case "7" -> month = "July";
+                case "8" -> month = "August";
+                case "9" -> month = "September";
+                case "10" -> month = "October";
+                case "11" -> month = "November";
+                case "12" -> month = "December";
             }
 
+            System.out.printf("The name of the month is %s.\n", month);
             correct = true;
         }
     }
